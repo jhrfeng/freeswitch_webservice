@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>登入</title>
+        
+        <!-- plugins style-->
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        
+        <!-- custom style -->
+        <link rel="stylesheet" href="resources/styles/uikit.ext.css" />
+        <link rel="stylesheet" href="resources/styles/global.css" />
+        <link rel="stylesheet" href="resources/styles/layout.css" />
+        
+        <!-- plugins script -->
+        <script src="resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+        
+        <!-- custom script -->
+        <script type="text/javascript">
+        $(function(){
+            $("#header-container").load("header.html");
+            $("#footer-container").load("footer.html");
+        });
+        </script>
+        <style type="text/css">
+            .login-container > .uk-panel{
+                border: 1px solid #797671;
+                border-radius: 30px;
+                height: 400px;
+                padding: 10px;
+            }
+            .login-container .login-type-container{
+                margin-top: 15px;
+            }
+            .login-container .login-type-container .uk-icon-button {
+                background-color: #457DEC;
+                color: #ffffff;
+            }
+
+            #login-form.uk-form-horizontal .uk-form-label {
+                width: 80px;
+                text-align: right;
+            }
+            #login-form.uk-form-horizontal .uk-form-controls {
+                margin-left: 100px;
+            }
+            #login-form input{
+                width: 200px;
+            }
+            #login-form .uk-button{
+                width: 200px;
+            }
+            .login-form-container{
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- header container -->
+    <div id="header-container"></div>
+    
+    <!-- breadcrumb container -->
+    <div class="uk-container uk-container-center uk-margin-medium-top">
+        <div class="uk-panel">
+            <ul class="uk-breadcrumb">
+                <li><a href="index.html">首頁</a></li>
+                <li class="uk-active"><span>登入</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- login container -->
+    <div class="login-container uk-container uk-container-center uk-margin-medium-top">
+        <div class="uk-panel">
+            <div class="uk-grid uk-grid-small">
+                <div class="uk-width-medium-3-4">
+                    <div class="uk-panel" style="border-right: 1px solid #000000;height: 400px;">
+                        <!-- 登入类型 -->
+                        <div class="uk-container-center" style="width: 600px;">
+                            <div class="login-type-container uk-grid uk-grid-small">
+                                <div class="uk-width-1-2">
+                                    <label>第三方登入</label>
+                                    <a class="uk-icon-button uk-icon-twitter" href="#"></a>
+                                    <a class="uk-icon-button uk-icon-facebook" href="#"></a>
+                                    <a class="uk-icon-button uk-icon-google" href="#"></a>
+                                </div>
+                                <div class="uk-width-1-2 uk-text-right">
+                                    <label for="member-login"><input id="member-login" type="radio" name="loginType" value="1" />會員登入</label>
+                                    <label for="credent-login"><input id="credent-login" type="radio" name="loginType" value="2" />憑證登入</label>
+                                    <a class="uk-icon-button uk-icon-google invisible" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 登入表单 -->
+                        <div class="login-form-container uk-container-center uk-margin-large-top">
+                            <form id="login-form" class="uk-form uk-form-horizontal">
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="username">用戶名</label>
+                                    <div class="uk-form-controls"><input id="username" type="text" name="username" placeholder="用戶名" class="uk-form-black"/></div> 
+                                </div>
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="">密碼</label>
+                                    <div class="uk-form-controls"><input id="password" type="text" name="password" placeholder="密碼" class="uk-form-black"/><a class="uk-form-help-inline" href="#">忘记密码？</a></div> 
+                                </div>
+                                <div class="uk-form-row">
+                                    <label class="uk-form-label" for="">驗證碼</label>
+                                    <div class="uk-form-controls"><input type="text" placeholder="密碼" class="uk-form-black"/></div> 
+                                </div>
+                                <div class="uk-form-row">
+                                    <div class="uk-form-controls">
+                                        <img src="" style="width: 100px;height: 30px;"/><span class="invisible">隱</span><a href="#">換一張</a>
+                                    </div> 
+                                </div>
+                                <div class="uk-form-row">
+                                    <div class="uk-form-controls">
+                                        <button class="uk-button uk-button-large uk-button-primary" type="button">登入</button>
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-4">
+                    <div class="uk-panel uk-vertical-align" style="height: 400px;">
+                        <div class="uk-vertical-align-middle" style="width: 100%;">
+                            <h2 class="uk-text-center">您還不是會員？</h2>
+                            <div class="uk-text-center"><button class="uk-button uk-button-large" type="button">免費註冊</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer container-->
+    <div id="footer-container"></div>
+    </body>
+</html>
