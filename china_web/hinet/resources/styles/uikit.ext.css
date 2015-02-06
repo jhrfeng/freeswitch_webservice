@@ -1,3 +1,20 @@
+@charset "utf-8";
+
+.uk-text-black {
+  color: #000000!important;
+}
+
+.uk-margin-medium-top{
+    margin-top: 10px !important;
+}
+
+/*字体大小中等*/
+.uk-text-medium {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/*表单边框为黑色*/
 .uk-form-black {
   border-color: #000000 !important;
 }

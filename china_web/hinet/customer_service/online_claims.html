@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>線上理賠</title>
+        
+        <!-- plugins style-->
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        
+        <!-- custom style -->
+        <link rel="stylesheet" href="../resources/styles/uikit.ext.css" />
+        <link rel="stylesheet" href="../resources/styles/global.css" />
+        <link rel="stylesheet" href="../resources/styles/header-footer.css" />
+        
+        <!-- plugins script -->
+        <script src="../resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+        
+        <!-- custom script -->
+        <script type="text/javascript">
+        $(function(){
+            $("#header-container").load("../header.html");
+            $("#footer-container").load("../footer.html");
+        });
+        </script>
+		
+		<style>
+			body{
+				font-family: "Arial Normal","Arial";
+			}
+			.form_title{
+				color:#36c;
+				font-size: 16px;
+				font-weight: bold;
+				margin-top: 15px;
+			}
+			.div_border{
+				border:1px solid #797979;
+			}
+			.title_hr{
+				height:3px;
+				border-width:0;
+				color:#36c;
+				background-color:#36c;
+				width:30%;
+				margin-top: 3px;
+				text-align: left;
+			}
+			#formDiv > div > div{
+				text-align: left;
+				margin-bottom: 20px;
+				padding-left: 3%;
+			}
+			.liner_table{
+				border:1px solid #000;
+				width: inherit;
+				border-collapse: collapse;
+			}
+			.liner_table th{
+				border-bottom: 1px solid #000;
+				border-left: 1px solid #000;
+				border-right: 1px solid #000;
+				border-top: 1px solid #000;
+				text-align: center;
+			}
+			.liner_table td{
+				border-bottom: 1px solid #000;
+				border-left: 1px solid #000;
+				border-right: 1px solid #000;
+				border-top: 1px solid #000;
+				text-align: left;
+			}
+			
+			input[type=text]{
+				width:160px;
+				height:22px;
+				padding: 0px 0px 0px 0px;
+			}
+			select{
+				width:160px;
+				height:22px;
+			}
+		</style>
+	</head>
+    <body class="body-background">
+		<!-- header container -->
+		<div id="header-container"></div>
+		
+    	<!-- 面包屑 -->
+		<div class="uk-container uk-container-center uk-margin-top">
+			<div class="uk-grid uk-grid-small">
+				<div class="uk-width-1-1">
+					<ul class="uk-breadcrumb font_size_18">
+						<li><a href="javascript:void(0);">首頁</a></li>
+						<li><a href="javascript:void(0);">客戶服務</a></li>
+						<li><a href="javascript:void(0);">保單理賠</a></li>
+						<li class="uk-active"><span>線上理賠</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 線上理賠流程圖 -->
+		<div class="uk-container uk-container-center uk-margin-top">
+			<div class="uk-grid uk-grid-small div_border uk-text-center">
+				<div class="uk-width-1-1">
+					<img src="../resources/images/u123.png"/>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 表单数据 -->
+		<form action="/HiNetProjHtml/customer_service/online_claimsbkp.html">
+			<div id="formDiv" class="uk-container uk-container-center uk-margin-top ">
+				<div class="uk-grid uk-grid-small div_border">
+					<div class="uk-width-1-1 form_title">
+						&nbsp;&nbsp;&nbsp;報案信息
+						<hr class="title_hr">
+					</div>
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>事故者ID</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>事故發生日期</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>事故者姓名</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>事故者出生日期</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>行動電話</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>聯絡電話</span>
+					</div>
+					<div class="uk-width-medium-2-6 uk-width-small-1-1">
+						<input type="text" />
+					</div>
+						
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>通訊地址</span>
+					</div>
+					<div class="uk-width-medium-5-6 uk-width-small-1-1" style="margin-bottom:0px;">
+						<select style="margin-bottom:20px;">
+						</select>
+						<select style="margin-bottom:20px;">
+						</select>
+						<select style="margin-bottom:20px;">
+						</select>
+						<input style="margin-bottom:20px;" type="text"/>
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>保單訊息</span>
+					</div>
+					<div class="uk-width-medium-5-6 uk-width-small-1-1">
+						<table class="liner_table">
+							<tr>
+								<th>保單號</th>
+								<th>承保日期</th>
+								<th>投保產品</th>
+								<th>保險金額</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"/></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>申請日期</span>
+					</div>
+					<div class="uk-width-medium-5-6 uk-width-small-1-1">
+						<input type="text"/>
+					</div>
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>事故原因</span>
+					</div>
+					<div class="uk-width-medium-5-6 uk-width-small-1-1">
+						<input type="text" style="width:70%;"/>
+					</div>
+					
+						
+					<div class="uk-width-medium-1-6 uk-width-small-1-1">
+						<span>申請類型</span>
+					</div>
+					<div class="uk-width-medium-5-6 uk-width-small-1-1">
+						<input type="radio"/>非意外事故
+						<input type="radio"/>意外事故
+					</div>
+						
+					<div class="uk-width-large-1-6 uk-width-medium-1-1 uk-width-small-1-1">
+						<span>申請項目</span>
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>醫療實支
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>醫療日額（燒燙傷）
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>防癌
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>津貼（生育、結婚）
+					</div>
+					<div class="uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+					</div>
+						
+					<div class="uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>特定疾病（特定傷病）
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>死亡
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>殘廢
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>全殘（全殘關懷
+					</div>
+					<div class="uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+					</div>
+						
+						
+					<div class="uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>豁免保費
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>長期看護
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>定期給付保險金（生活扶助、殘廢生活金
+					</div>
+					<div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">
+						<input type="checkbox"/>意外險
+					</div>
+					<div class="uk-width-large-1-6 uk-hidden-small uk-hidden-medium">
+					</div>
+						
+					<div class="uk-width-1-1 uk-text-center">
+						<button type="submit" class="uk-button-large">&nbsp;&nbsp;&nbsp;提交&nbsp;&nbsp;&nbsp;</button>
+					</div>
+					</div>
+			</div>
+		</form>
+		
+		<!-- footer container-->
+		<div id="footer-container"></div>
+    </body>
+	</body>
+</html>

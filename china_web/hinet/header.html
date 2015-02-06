@@ -6,7 +6,7 @@
                 <div class="uk-panel uk-panel-box">
                     <div class="uk-grid">
                         <div class="uk-grid-margin">您好，歡迎來到中華電信網上商城</div>
-                        <div class="uk-grid-margin">請&nbsp;&nbsp;&nbsp;<a href="#">登錄</a>&nbsp;&nbsp;&nbsp;或&nbsp;&nbsp;&nbsp;<a href="#">註冊會員</a></div>
+                        <div class="uk-grid-margin">請&nbsp;&nbsp;&nbsp;<a href="login.html">登錄</a>&nbsp;&nbsp;&nbsp;或&nbsp;&nbsp;&nbsp;<a href="#">註冊會員</a></div>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             <div class="uk-panel uk-panel-box">
                 <div class="uk-grid">
                     <div>
-                        <a href="#"><img width="273" height="57" alt="中华电信" title="中华电信" src="resources/images/logo.png" class="uk-margin-remove"/></a>
+                        <a href="/HiNetProjHtml/index.html"><img width="273" height="57" alt="中华电信" title="中华电信" src="/HiNetProjHtml/resources/images/logo.png" class="uk-margin-remove"/></a>
                     </div>
                     <div class="uk-vertical-align">
                         <div class="uk-vertical-align-bottom">網上商城</div>
@@ -53,7 +53,7 @@
 <!-- header-navbar -->
 <nav id="header-navbar" class="uk-navbar uk-navbar-attached">
     <div class="uk-container uk-container-center">
-        <div class="category-menu uk-navbar-brand uk-text-center uk-hidden-small uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+        <div id="category-menu" class="category-menu uk-navbar-brand uk-text-center uk-hidden-small uk-button-dropdown">
             <a href="#">產品分類</a>
             <div class="uk-dropdown uk-dropdown-navbar">
                 <ul class="uk-nav uk-nav-navbar">
@@ -64,13 +64,13 @@
                         <a href="#"><i class="uk-icon-umbrella"></i>傷害保險</a>
                     </li>
                     <li>
+                        <a href="#"><i class="uk-icon-money"></i>人壽保險</a>
+                    </li>
+                    <li>
                         <a href="#"><i class="uk-icon-medkit"></i>車輛保險</a>
                     </li>
                     <li>
                         <a href="#"><i class="uk-icon-heart"></i>住宅綜合保險</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="uk-icon-money"></i>人壽保險</a>
                     </li>
                     <li>
                         <a href="#"><i class="uk-icon-automobile"></i>健康醫療保險</a>
@@ -80,11 +80,11 @@
         </div>
 
         <ul class="uk-navbar-nav uk-hidden-small">
-            <li><a href="#">首頁</a></li>
-            <li class="uk-active"><a href="product/product_index.html">產品中心</a></li>
-            <li><a href="sale_activity/index.html">行銷活動</a></li>
-            <li><a href="#">客戶服務</a></li>
-            <li><a href="#">保險客堂</a></li>
+            <li class="uk-active"><a href="index.html">首頁</a></li>
+            <li><a href="/HiNetProjHtml/product/product_index.html">產品中心</a></li>
+            <li><a href="/HiNetProjHtml/sale_activity/sale_activity.html">行銷活動</a></li>
+            <li><a href="/HiNetProjHtml/customer_service/service.html">客戶服務</a></li>
+            <li><a href="/HiNetProjHtml/insurance/insurance_index.html">保險客堂</a></li>
         </ul>
         
         <div class="uk-navbar-content uk-navbar-flip  uk-hidden-small">
@@ -121,3 +121,18 @@
     </div>
 </div>
 <!-- //header-offcanvas -->
+<script type="text/javascript">
+    $(function(){
+        var categoryMenu=UIkit.dropdown("#category-menu",{
+            mode:'click',
+            'show.uk.dropdown': function(){
+                console.log(111);
+            }
+        });
+        categoryMenu.on('show.uk.dropdown', function(){
+            console.log(111);
+        });
+        //categoryMenu.off("click");
+        //categoryMenu.show();
+    });
+</script>

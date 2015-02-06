@@ -5,6 +5,19 @@
     visibility: hidden!important;
 }
 
+.old-price-text{
+    color: #0000FF;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.new-price{
+    color: #ff0000;
+}
+.text-small{
+    font-size: 11px !important;
+}
+
 /* button style*/
 .uk-button::-moz-focus-inner {
     border: 0 none;

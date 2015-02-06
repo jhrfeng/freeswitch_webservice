@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>我的購物車</title>
+
+		<!-- plugins style-->
+		<link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+
+		<!-- custom style -->
+		<!--<link rel="stylesheet" href="。。/resources/styles/uikit.ext.css" />-->
+		<link rel="stylesheet" href="../resources/styles/global.css" />
+		<link rel="stylesheet" href="../resources/styles/header-footer.css" />
+		<link rel="stylesheet" href="../resources/styles/member-menu.css" />
+
+
+		<!-- plugins script -->
+		<script src="../resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+		<script src="../resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+		<script src="../resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+
+		<!-- custom script -->
+		<script type="text/javascript">
+			$(function() {
+				$("#header-container").load("../header.html");
+				$("#footer-container").load("../footer.html");
+				$("#nav-left").load("../member/member_menu.html");
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- header container -->
+		<div id="header-container"></div>
+		<!--表格-->
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid ">
+				<div class="uk-width-large-1-5 uk-width-medium-1-5 ">
+					<div id="nav-left" class="uk-panel">
+
+					</div>
+				</div>
+				<div class="uk-width-large-4-5 uk-width-medium-4-5 uk-width-small-1-1" style="border: 1px solid black">
+					<div class="uk-panel uk-width-large-5-6 uk-margin-large-top">
+
+						<table class="uk-table   uk-table-condensed" border="1">
+
+							<tr bgcolor="#F5F5F5">
+								<td class="uk-text-center uk-h3">產品名稱</td>
+								<td class="uk-text-center uk-h3">加入時間</td>
+								<td class="uk-text-center uk-h3">保費</td>
+								<td class="uk-text-center uk-h3"></td>
+
+							</tr>
+
+							<tr>
+								<td class="uk-text-center">健康隨e保重疾保障計劃</td>
+								<td class="uk-text-center "></td>
+								<td class="uk-text-center"><font color="red"><b>NT$：2000</b></font>起</td>
+								<td class="uk-text-center "><a>繼續</a>&nbsp;&nbsp;<a>删除</a></td>
+								
+
+							</tr>
+
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer container-->
+		<div id="footer-container"></div>
+	</body>
+
+</html>

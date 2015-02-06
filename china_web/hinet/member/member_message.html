@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>我的讯息</title>
+
+		<!-- plugins style-->
+		<link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+
+		<!-- custom style -->
+
+		<link rel="stylesheet" href="../resources/styles/global.css" />
+		<link rel="stylesheet" href="../resources/styles/header-footer.css" />
+		<link rel="stylesheet" href="../resources/styles/member-menu.css" />
+
+		<!-- plugins script -->
+		<script src="../resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+		<script src="../resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+		<script src="../resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+
+		<!-- custom script -->
+		<script type="text/javascript">
+			$(function() {
+				$("#header-container").load("../header.html");
+				$("#footer-container").load("../footer.html");
+				$("#nav-left").load("../member/member_menu.html");
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- header container -->
+		<div id="header-container"></div>
+		<!--导航栏-->
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid ">
+				<!--导航栏-->
+				<div class="uk-width-large-1-5 uk-width-medium-1-5 ">
+					<div id="nav-left" class="uk-panel">
+
+					</div>
+				</div>
+				<!--表格-->
+				<div class="uk-width-large-4-5 uk-width-medium-4-5 uk-width-small-1-1" style="border: 1px solid black">
+					<div class="uk-panel uk-width-large-4-5 uk-margin-top">
+
+						<!-- 这是包含拨动元素的选项卡式导航 -->
+						<ul class="uk-subnav uk-subnav-line uk-margin-medium-top" data-uk-tab="{connect:'#my-id'}">
+							<li><a href="">全部訊息</a>
+							</li>
+							<li>未讀</li>
+							<li>已讀</li>
+						</ul>
+
+						<!-- 包含内容项目的容器 -->
+						<ul id="my-id" class="uk-switcher uk-margin">
+
+							<li>
+								<table class="uk-table" border="1px">
+									<tr bgcolor="#F5F5F5">
+										<td class="uk-text-center uk-h3">時間</td>
+										<td class="uk-text-center uk-h3">訊息內容</td>
+										<td class="uk-text-center uk-h3">類別</td>
+										<td class="uk-text-center uk-h3">操作</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;啊啊啊</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table class="uk-table " border="1px">
+									<tr bgcolor="#CCCCCC">
+										<td class="uk-text-center uk-h3">時間</td>
+										<td class="uk-text-center uk-h3">訊息內容</td>
+										<td class="uk-text-center uk-h3">類別</td>
+										<td class="uk-text-center uk-h3">操作</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;才踩踩踩從</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table class="uk-table" border="1px">
+									<tr bgcolor="#CCCCCC">
+										<td class="uk-text-center uk-h3">時間</td>
+										<td class="uk-text-center uk-h3">訊息內容</td>
+										<td class="uk-text-center uk-h3">類別</td>
+										<td class="uk-text-center uk-h3">操作</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+										<td class="uk-text-center">&nbsp;</td>
+
+									</tr>
+								</table>
+							</li>
+						</ul>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer container-->
+		<div id="footer-container"></div>
+	</body>
+
+</html>

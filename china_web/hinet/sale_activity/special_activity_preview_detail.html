@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>專題活動</title>
+		<!-- plugins style-->
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/slideshow.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/slidenav.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/dotnav.gradient.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/cover.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/caption.min.css" />
+        
+        <!-- custom style -->
+        <link rel="stylesheet" href="../resources/styles/uikit.ext.css" />
+        <link rel="stylesheet" href="../resources/styles/global.css" />
+        <link rel="stylesheet" href="../resources/styles/header-footer.css" />
+        
+        <!-- plugins script -->
+        <script src="../resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/slideshow.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/slideshow-fx.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/cover.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+		<script type="text/javascript">
+        $(function(){
+            $("#header-container").load("/HiNetProjHtml/header.html");
+            $("#footer-container").load("/HiNetProjHtml/footer.html");
+        });
+        </script>
+        
+        <style type="text/css">
+        	/*网格布局中的每个产品的线框*/
+        	.mydiv_border .uk-panel {
+        		border: 1px solid #797671;
+        	}
+        	/*每个产品图片下的文字说明的缩进*/
+        	.text-mytab {
+        		padding-left: 30px;
+        		padding-right:30px;
+        	}
+        	/*每个产品图片的超链接*/
+        	.mydiv_border a.uk-thumbnail {
+        		border-width: 0px;
+        		display: block;
+        	}
+        	/*每个产品的超链接图片*/
+        	.mydiv_border a.uk-thumbnail img {
+        		width: 100%;
+        	}
+        	/*专题活动页面的活动产品区的面板的内边距设置，保证相对上面的logo图片有所缩进*/
+        	#activities-container > .uk-panel {
+        		padding: 10px 30px;
+        	}
+        	/*产品价格前缀符号*/
+        	.myperfix-text-price {
+        		color: blue;
+        		font-weight: 900;
+        		font-size: medium;
+        	}
+        	/*原价格删除线*/
+        	.mydel-line {
+        		text-decoration: line-through;
+        		color: red;
+        	}
+        	/*原价格*/
+        	.myorigin-text-price {
+        		color: blue;
+        		font-weight: 900;
+        		font-size: medium;
+        	}
+        	/*新价格*/
+        	.mynew-text-price {
+        		color: red;
+        		font-size: x-large;
+        	}
+        	/*产品图片下右侧的购物车图标*/
+        	.text-mytab .uk-float-right > div {
+        		padding-top: 10px;
+        	}
+        </style>
+	</head>
+	<body>
+		<!-- header container -->
+    	<div id="header-container"></div>
+    	
+    	<!-- 放专题活动图片的容器 -->
+		<div class="uk-container uk-container-center">
+			<div class="uk-panel">
+				<!-- 专题活动的图片 -->
+				<img width="100%" src="/HiNetProjHtml/resources/images/placeholder_800x400_2.jpg" alt="" />
+			</div>
+		</div>
+		<!-- //放专题活动图片的容器 -->
+    	
+    	<!-- 专题活动相应的产品区 -->
+    	<div id="activities-container" class="uk-container uk-container-center">
+    		<!-- 专题活动页面的活动产品区的面板 -->
+    		<div class="uk-panel">
+    			<div data-uk-grid="{gutter:10}" class="mydiv_border">
+    				<!-- 活动相关产品 -->
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				
+    				<div class="uk-width-medium-1-3 uk-width-small-1-1">
+    					<div class="uk-panel">
+    						<div class="uk-panel-teaser">
+    							<a class="uk-thumbnail" href="#">
+	                        		<img src="/HiNetProjHtml/resources/images/u122.png" alt="" />
+	                        	</a>
+    						</div>
+    						<div class="text-mytab">
+    							<ul class="uk-list uk-clearfix">
+					                <li class="uk-float-left uk-text-large">
+					                	<p class="uk-text-truncate uk-text-large">逍遙游短期意外險保障（C）</p>
+				                        <span class="myperfix-text-price">NT$:</span>
+				                        <span class="mydel-line">
+				                        	<span class="myorigin-text-price">2580</span>
+				                        </span>
+				                        &nbsp;&nbsp;<span class="mynew-text-price">現1628起</span>
+					                </li>
+					                <li class="uk-float-right">
+					                	<div>
+					                		<a href="#">
+					                			<img src="/HiNetProjHtml/resources/images/whiteshoppingcart.png" />
+					                		</a>
+					                	</div>
+					                </li>
+					            </ul>
+    						</div>
+    					</div>
+    				</div>
+    				<!-- //活动相关产品 -->
+    			</div>
+			</div>
+			<!-- //专题活动页面的活动产品区的面板 -->
+    	</div>
+    	<!-- //专题活动相应的产品区 -->
+    	
+    	<!-- footer container-->
+    	<div id="footer-container"></div>
+	</body>
+</html>
