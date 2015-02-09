@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>help</title>
+		<!-- plugins style-->
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/slideshow.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/slidenav.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/dotnav.gradient.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/cover.min.css" />
+        <link rel="stylesheet" href="../resources/plugins/uikit/2.16.2/css/components/caption.min.css" />
+        
+        <!-- custom style -->
+        <link rel="stylesheet" href="../resources/styles/uikit.ext.css" />
+        <link rel="stylesheet" href="../resources/styles/global.css" />
+        <link rel="stylesheet" href="../resources/styles/header-footer.css" />
+        
+        <!-- plugins script -->
+        <script src="../resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/slideshow.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/slideshow-fx.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/cover.min.js"></script>
+        <script src="../resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $("#header-container").load("/HiNetProjHtml/header.html");
+            $("#footer-container").load("/HiNetProjHtml/footer.html");
+            $("#my-help-nav").load("/HiNetProjHtml/help/help_nav.html",function(){
+//	            $("#my-help-nav .uk-nav>li").each(function(index,item){
+//	            	$(item).on("click",function(){
+//	            		$(this).find(".uk-active").removeClass("uk-active");
+//	            		$(this).find("a").addClass("uk-active");
+//			        	alert($(this).find('a').text());
+//			        });
+//	            });
+				$("#my-newguy-uproad").addClass("uk-active");
+            });
+        });
+        </script>
+        <style type="text/css">
+        	/*右侧详细帮助内容的大标题*/
+        	.my-help-title {
+        		color: #333333;
+        		font-size: large;
+        	}
+        	/*右侧详细帮助内容面板*/
+        	.my-help-content {
+        		border: 1px solid #797671;
+        		padding: 30px;
+        	}
+        	/*右侧详细帮助内容的段落*/
+        	.my-help-content > div {
+        		margin: 30px;
+        	}
+        </style>
+	</head>
+	<body>
+		
+		<!-- header container -->
+   	 	<div id="header-container"></div>
+   	 	
+   	 	<!-- breadcrumb container -->
+	    <div class="uk-container uk-container-center uk-margin-medium-top">
+	        <div class="uk-panel">
+	            <ul class="uk-breadcrumb">
+	                <li><a href="index.html">首頁</a></li>
+	                <li class="uk-active"><span>服務幫助</span></li>
+	            </ul>
+	        </div>
+	    </div>
+	    
+	    <!-- 帮助中心的左侧菜单栏及右侧详细帮助内容 -->
+	    <div class="uk-container uk-container-center uk-margin-medium-top">
+	    	<div class="uk-panel">
+	    		<div class="uk-grid uk-grid-small">
+	    			<div class="uk-width-1-5">
+	    				<!-- 左侧菜单栏 -->
+	    				<nav id="my-help-nav"></nav>
+	    				<!-- //左侧菜单栏 -->
+	    			</div>
+	    			<div class="uk-width-4-5">
+	    				<!-- 右侧详细帮助内容 -->
+	    				<div class="uk-panel my-help-content">
+	    					<h2 class="my-help-title">新手上路</h2>
+	    					<h5>新用戶註冊</h5>
+		    					<div>
+		    						<p>點擊“<a href="#">註冊會員</a>”，進入註冊頁並按要求填寫註冊資訊即可成為我們的會員。</p>
+		    					</div>
+	    					<h5>投保流程</h5>
+		    					<div>
+		    						<p>保單承保後，我公司將按您所填寫的手機/電子郵箱發送電子保險單。電子保險單與紙質保單具有同等法律效力。</p>
+			    					<p>您可以通過網上商城的“<a href="#">會員中心</a>”進行查詢。</p>
+			    					<p><img src="/HiNetProjHtml/resources/images/help-center.png" /></p>
+		    					</div>
+	    					<h5>注意事項</h5>
+		    					<div>
+		    						<p>1. 投保前請認真閱讀投保須知、保險條款及其他特別說明。</p>
+			    					<p>2. 請務必如實填寫客戶資料，就我公司提出的詢問據實告知，否則將影響您的保單的法律效力。</p>
+			    					<p>3. 假如您為未成年子女投保，按照國家保險監管機關的規定：未成年人死亡給付保險金在各家保險公司的總和 ( 不包括航空意外 ) 不超過 10 萬元。</p>
+		    					</div>
+	    					<h5>常見問題</h5>
+		    					<div>
+		    						<p>1、電子保單下載後卻不能正常打開，怎麼辦？</p>
+			    					<p>當下載保單時出現"當打開文檔時發生錯誤-檔已損壞並且無法修復"的情況，有可能是電腦裡的PDF軟體過低，可在當前頁面下載最新版本Adobe Reader。</p>
+			    					<p>2、會員如何修改個人資訊？</p>
+			    					<p>登入 → 會員中心→ 個人資料管理 → 個人資料→ 修改→ 保存</p>
+			    					<p>注：會員個人資訊的修改僅僅是網上留存資訊的修改，而不是您承保的保險合同（保單）中相應資訊的修改。</p>
+			    					<p>3、不註冊成為會員可以線上購買產品嗎？</p>
+			    					<p>不可以。非註冊用戶不可以線上進行購買。但您進行註冊後，方可進行購買，同時能享受後期會員優惠活動，以及對您的使用者資料、投保資訊等進行管理。建議您在有時間的情況下，先完成註冊，再去進行購買。</p>
+		    					</div>
+	    				</div>
+	    				<!-- //右侧详细帮助内容 -->
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!-- //帮助中心的左侧菜单栏及右侧详细帮助内容 -->
+   	 	
+   	 	<!-- footer container-->
+    	<div id="footer-container"></div>
+   	 	
+	</body>
+</html>

@@ -7,6 +7,7 @@
         
         <!-- plugins style-->
         <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/form-file.min.css" />
         
         <!-- custom style -->
         <link rel="stylesheet" href="resources/styles/uikit.ext.css" />
@@ -23,14 +24,10 @@
         $(function(){
             $("#header-container").load("header.html");
             $("#footer-container").load("footer.html");
-
+            
             //登录类型的切换
             $("#loginTypeHeader").on('show.uk.switcher', function(event, active, item){
-                active.find(":radio").eq(0).attr("checked","");
-                var siblings=active.siblings();
-                siblings.each(function(index,item){
-                    $(item).find(":radio").eq(0).removeAttr("checked");
-                });
+                active.find(":radio[name='loginType']").eq(0).prop("checked","checked");
             });
         });
         </script>
@@ -65,7 +62,7 @@
                                     <a class="uk-icon-button uk-icon-google" href="#"></a>
                                 </div>
                                 <div class="uk-width-2-3 uk-text-left">
-                                    <ul id="loginTypeHeader" class="uk-list" data-uk-switcher="{connect: '#login-content'}">
+                                    <ul id="loginTypeHeader" class="uk-list uk-clearfix" data-uk-switcher="{connect: '#login-content'}">
                                         <li class="uk-float-left">
                                             <label for="member-login" class="uk-text-medium"><input id="member-login" type="radio" name="loginType" value="1" checked="checked"/>會員登入</label>
                                             <a class="uk-icon-button uk-icon-google invisible" href="#"></a>
@@ -112,7 +109,10 @@
                             <!--憑證登入-->
                             <li>
                                 <div class="login-form-container uk-container-center uk-margin-large-top">
-                                    dfdsfdsfdsfdsfdsfs
+                                    <div class="uk-form-file">
+                                        <button class="uk-button">请选择文件...</button>
+                                        <input type="file">
+                                    </div>
                                 </div>
                             </li>
                         </ul>

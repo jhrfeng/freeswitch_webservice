@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+		<title>我要留言</title>
+		<!-- plugins style-->
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/uikit.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/slideshow.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/slidenav.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/dotnav.gradient.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/cover.min.css" />
+        <link rel="stylesheet" href="resources/plugins/uikit/2.16.2/css/components/caption.min.css" />
+        
+        <!-- custom style -->
+        <link rel="stylesheet" href="resources/styles/uikit.ext.css" />
+        <link rel="stylesheet" href="resources/styles/global.css" />
+        <link rel="stylesheet" href="resources/styles/header-footer.css" />
+        
+        <!-- plugins script -->
+        <script src="resources/plugins/jquery/jquery-1.11.0.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/uikit.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/components/slideshow.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/components/slideshow-fx.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/components/cover.min.js"></script>
+        <script src="resources/plugins/uikit/2.16.2/js/components/grid.min.js"></script>
+		<script type="text/javascript">
+        $(function(){
+            $("#header-container").load("/HiNetProjHtml/header.html");
+            $("#footer-container").load("/HiNetProjHtml/footer.html");
+            $("#my-contact").on("keyup",function(){
+            	this.value=this.value.replace(/\D/g,'');
+            });
+            $("#my-contact").on("paste",function(){
+            	this.value=this.value.replace(/\D/g,'')
+            });
+        });
+        </script>
+        <style type="text/css">
+        	/*留言板框架*/
+        	#my-message-board {
+        		border: 1px solid #797671;
+        	}
+        	/*留言板表单*/
+        	#leave-message-form {
+        		margin: 30px;
+        	}
+        	/*所有表单元素*/
+        	input[type=text]{
+        		width: 500px;
+        	}
+        	/*textarea*/
+        	#my-content {
+        		width: 500px;
+        		height: 300px;
+        	}
+        </style>
+	</head>
+	<body>
+		
+		<!-- header container -->
+   	 	<div id="header-container"></div>
+   	 	
+   	 	<!-- breadcrumb container -->
+	    <div class="uk-container uk-container-center uk-margin-medium-top">
+	        <div class="uk-panel">
+	            <ul class="uk-breadcrumb">
+	                <li><a href="index.html">首頁</a></li>
+	                <li class="uk-active"><span>我要留言</span></li>
+	            </ul>
+	        </div>
+	    </div>
+	    
+	    <!-- 留言板 -->
+	    <div id="my-message-board" class="uk-container uk-container-center">
+	    	<div class="uk-panel">
+	    		<form id="leave-message-form" class="uk-form uk-form-horizontal">
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="my-title">標題</label>
+                        <div class="uk-form-controls">
+                        	<input id="my-title" type="text" name="my-title" class="uk-form-black"/>
+                        </div> 
+                    </div>
+                    <div class="uk-form-row">
+                        <label class="uk-form-label">分類</label>
+                        <div class="uk-form-controls">
+                        	<input type="radio"  name="my-category"/>產品咨詢&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        	<input type="radio"  name="my-category"/>問題訂單&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        	<input type="radio"  name="my-category"/>網站使用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div> 
+                    </div>
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="my-content">內容</label>
+                        <div class="uk-form-controls">
+                        	<textarea id="my-content" name="my-content" class="uk-form-black"></textarea>
+                        </div> 
+                    </div>
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="my-contact">聯繫方式</label>
+                        <div class="uk-form-controls">
+                        	<input id="my-contact" type="text" name="my-contact" class="uk-form-black"/>
+                        </div> 
+                    </div>
+                    <div class="uk-form-row">
+                        <div class="uk-form-controls">
+                            <button class="uk-button uk-button-large uk-button-primary" type="button">取消</button>
+                            <button class="uk-button uk-button-large uk-button-primary" type="button">提交</button>
+                        </div> 
+                    </div>
+                </form>
+	    	</div>
+	    </div>
+	    <!-- //留言板 -->
+   	 	
+   	 	<!-- footer container-->
+    	<div id="footer-container"></div>
+   	 	
+	</body>
+</html>
